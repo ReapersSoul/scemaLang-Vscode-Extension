@@ -1,0 +1,25 @@
+{
+  "name": "scemaLang",
+  "displayName": "schemaLang",
+  "description": "Language support for schemaLang code generator language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "schemalang",
+      "aliases": ["schemaLang", "schemalang"],
+      "extensions": [".schema",".schemaLang"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "schemalang",
+      "scopeName": "source.schema",
+      "path": "./syntaxes/schemalang.tmLanguage.json"
+    }]
+  }
+}
